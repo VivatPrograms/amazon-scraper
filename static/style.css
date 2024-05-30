@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {font-family: Arial, sans-serif;}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.hero {
+    display: flex;
+    height: 90vh;
+}
+
+.hero > div {
+    width: 50%;
+}
+
+.left-container {
+    background-color: whitesmoke;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+}
+
+.search-box {
+    height: 4rem;
+    width: 50%;
+    margin: 10vh 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.scroll-box {
+    height: 50vh;
+    width: 90%;
+    margin: 0 auto;
+    overflow-y: auto; 
+    border: 0.1rem solid #ccc;
+    padding: 1rem;
+}
+
+.scroll-box button {
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.scroll-box button:hover {
+    background-color: #e0e0e0;
+}
+
+.scroll-box button:active {
+    background-color: aquamarine;
+}
+
+.right-container {
+    background-color: aliceblue;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Set flex direction to column */
+}
+
+.graph {
+    background-color: aquamarine;
+    width: 90%;
+    height: 50vh;
+}
+
+a {
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10vh 0;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Scraper</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='style.css') }}>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src={{ url_for('static', filename='script.js') }}></script>
+</head>
+<body>
+    <nav>Vivat's Amazon scraper</nav>
+    <section class="hero">
+        <div class="left-container">
+            <input type="search" placeholder="Search Amazon" class="search-box" id="searchInput">
+            <div class="scroll-box" id="scrollBox">
+                <!-- insert items here -->
+            </div>
+        </div>
+        <div class="right-container">
+            <a id="latestProductLink" class="link" href="">LINK TO LATEST PRODUCT</a>
+            <div class="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
